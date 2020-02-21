@@ -6,8 +6,9 @@ import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 
 import globalRouter from "./routers/globalRouter";
-import userRouter from "./routers/userRouter";
-import videoRouter from "./routers/videoRouter";
+import courseRouter from "./routers/courseRouter";
+import apiRouter from "./routers/apiRouter";
+
 import routes from "./routes";
 
 const app = express();
@@ -19,8 +20,7 @@ app.use(helmet());
 app.use(morgan("dev"));
 
 app.use("/", globalRouter);
-app.use(routes.users, userRouter);
-app.use("/videos", videoRouter);
-// app.use(routes.videos, videoRouter);
+app.use(routes.courses, courseRouter);
+app.use(routes.api, apiRouter);
 
 export default app;
