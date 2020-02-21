@@ -10,7 +10,7 @@ const NEW = "/new";
 const MINE = "/mine";
 
 // API
-const DOCUMENTATION = "/api/documentation";
+const DOCUMENTATION = "/documentation";
 const BUY = "/buy"; //"/api/v1/buy";
 const REFUND = "/refund"; //"/api/v1/refund";
 const REMOVE = "/remove"; //"/api/v2/remove";
